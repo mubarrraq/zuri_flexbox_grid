@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@100;300&family=Work+Sans:wght@500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-family: 'Quicksand', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Work Sans', sans-serif;
+}
+/* Flexbox */
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    place-content: center;
+}
+nav{
+    top: 5%;
+    left: 5%;
+    position: absolute;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+ul li a{
+    padding: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: #E28525;
+}
+ul li a:hover{
+    color: #016972;
+}
+
+#flexbox{
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 25px;
+
+}
+.card{
+    width: 33.33%;
+    height: 100%;
+    padding: 50px;
+    border: none;
+}
+img{
+    width: 50px;
+    height: auto;
+    margin-bottom: 30px;
+}
+.card h1{
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: white;
+}
+.card p{
+    width: 100%;
+    /* margin-bottom: 50px; */
+    color: white;
+}
+#btn1{
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 25%;
+    color: #E28525;
+}
+#btn2{
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 25%;
+    color: #00403F;
+}
+#btn3{
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 25%;
+    color: #00403F;
+}
+.card1{
+    background-color: #E28525;
+    border-radius: 10px 0 0 10px;
+}
+.card2{
+    background-color: #016972;
+}
+.card3{
+    background-color: #00403F;
+    border-radius: 0 10px 10px 0;
+}
+#btn1:hover{
+    border: 2px solid white;
+    color: white;
+    background-color: #E28525;
+}
+#btn2:hover{
+    border: 2px solid white;
+    color: white;
+    background-color:#016972;
+}
+#btn3:hover{
+    border: 2px solid white;
+    color: white;
+    background-color:#00403F;
+}
+
+/* CSS Grid */
+
+.gridwrap{
+    margin: auto;
+    width: 700px;
+    height: 400px;
+    background-color: gray;
+    border: 1px solid gray;
+    display: grid;
+    gap: 10px;
+    
+}
+.grid1, .grid2{
+    width: 670px;
+    height: 180px;
+    /* background-color: white;
+    border: 1px solid white; */
+    margin: auto;
+    display: grid;
+    grid-column: 2fr 1fr;
+    gap: 10px;
+}
+.grid1{
+    grid-template-areas: 
+    'box1 box1 box2';
+}
+
+.box1{
+    background-color: yellow;
+    border: 1px solid yellow;
+    grid-area: box1;
+}
+.box2{
+    background-color: blue;
+    border: 1px solid blue;
+    grid-area: box2;
+}
+
+.grid2{
+    grid-template-areas: 
+    'box3 box3  box4 box4'
+    'box3 box3  box5 box5';
+}
+
+.box3{
+    background-color: fuchsia;
+    border: 1px solid fuchsia;
+    grid-area: box3;
+}
+.box4{
+    background-color: palegreen;
+    border: 1px solid palegreen;
+    grid-area: box4;
+}
+.box5{
+    background-color: palegreen;
+    border: 1px solid palegreen;
+    grid-area: box5;
+}
+
